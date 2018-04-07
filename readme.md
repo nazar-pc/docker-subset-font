@@ -11,7 +11,7 @@ Before using this, make sure you have [Docker installed](https://www.docker.com/
 Modifies font file to only include characters from specified CSS file.
 
 Examples:
-  docker run --rm -it -v /path/to/font.woff2:/font.woff2 -v /path/to/style.css:/style.css nazarpc/subset-font
+  docker run --rm -v /path/to/font.woff2:/font.woff2 -v /path/to/style.css:/style.css nazarpc/subset-font
 ```
 
 ## Contribution
