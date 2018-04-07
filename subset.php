@@ -28,7 +28,7 @@ foreach ($unicode_characters as $character) {
 	$character = str_pad($character, 4, '0', STR_PAD_LEFT);
 	$binary    .= "\u$character";
 }
-$binary = json_decode("\"$binary\"");var_dump(strlen($binary));
+$binary = json_decode("\"$binary\"");
 file_put_contents('/tmp/characters', $binary);
 system('glyphIgo subset -f /tmp/font.ttf --plain /tmp/characters -o /tmp/font.ttf') !== false || exit;
 // We want *.woff2 eventually, so let's compress it and remove original *.ttf file
